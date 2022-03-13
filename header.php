@@ -28,7 +28,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="home.php">account</a>
         </li>
@@ -42,7 +42,11 @@
           <a class="nav-link " href="shop.php">shop</a>
         </li>
 
-        <li class="nav-item"  >
+        <li class="nav-item">
+          <a class="nav-link " href="cart.php">cart</a>
+        </li>
+
+        <li class="nav-item " style="margen-right:auto;"  >
           <a class="nav-link " href="index.php" >logout</a>
         </li>
 

@@ -1,0 +1,48 @@
+
+<?php
+
+
+include( "header.php");
+
+include('database.php');  
+
+
+
+
+?>
+
+    <div class="container mt-5">
+
+    <?php
+
+    if(isset($_POST['id'])){
+
+    $idd = $_POST['id'];
+
+    $sql = "SELECT * FROM prodcut WHERE id=`$idd`  ";
+
+    if($result = mysqli_query($con, $sql)){
+      if(mysqli_num_rows($result) > 0){
+        
+            while($row = mysqli_fetch_array($result)){
+                echo '<div class="col">
+                <div class="card">
+                  <div class="card-body">'.
+                '  <h5 class="card-title">'. $row['name'] .'</h5>'.
+                '<p class="card-text">'. $row['price'] .'</p>'.
+              '</div>
+              </div>
+            </div>';
+            }}}}
+            else
+            echo "not found";
+
+?>
+
+
+
+<?php
+
+include( "footer.php");
+
+?>
