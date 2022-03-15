@@ -14,6 +14,29 @@ include('database.php');
     <div class="container mt-5">
 
     <?php
+  //echo $_POST['idp'];
+if(isset($_POST['addToCart'])){
+  if(isset($_SESSION['cart'])){
+    $products_ids = array_column($_SESSION['cart'],"productid");
+    if(!in_array($_POST['idp'],$products_ids)){
+      $count = count ($_SESSION['cart']['productid']);
+      $array_item = array('productid'=> $_POST['idp']);
+      $_SESSION['cart'][$count] = $array_item;
+    }
+foreach($products_ids as $id):
+echo $id."   ,";
+endforeach;
+
+  }else{
+    $array_item = array('productid'=> $_POST['idp']);
+    $_SESSION['cart'][0] = $array_item;
+    print_r($_SESSION['cart'][0]);
+    echo  isset($_SESSION['cart'])."    ";
+    echo "dsf";
+  }
+
+}
+
 
     if(!empty($_POST["idp"])){
 
