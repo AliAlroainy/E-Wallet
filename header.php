@@ -30,22 +30,26 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="home.php">account</a>
+          <a class="nav-link active" aria-current="page" href="home.php">Account</a>
         </li>
         <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <a class="nav-link" href="#">recive</a>
+          <a class="nav-link" href="#">Recive</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link " href="info.php">RecevedInfo</a>
+        </li>
+
  
         <li class="nav-item">
-          <a class="nav-link " href="shop.php">shop</a>
+          <a class="nav-link " href="shop.php">Shop</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link " href="cart.php">cart</a>
+          <a class="nav-link " href="cart.php">Cart</a>
         </li>
-
+    
         <li class="nav-item " style="margen-right:auto;"  >
-          <a class="nav-link " href="index.php" >logout</a>
+          <a class="nav-link " href="index.php" >Logout</a>
         </li>
 
       </ul>

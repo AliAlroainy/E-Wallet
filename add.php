@@ -38,6 +38,9 @@ if($result1 = mysqli_query($con, $sql2)){
 
      $sql3 = "UPDATE balance SET total='$Total' ";
      mysqli_query($con, $sql3);
+
+     header("Location: home.php");
+
     
 
 $con->close();
