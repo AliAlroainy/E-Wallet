@@ -33,7 +33,7 @@ if($result = mysqli_query($con, $sql)){
                   <div class="card-body">'.
                 '  <h5 class="card-title">'. $row['name'] .'</h5>'.
                 '<p class="card-text">'. $row['price'] .'</p>'. 
-                '<input type="hidden" name="id" form="pform" value="' .  htmlspecialchars($id) .'"  />'.
+                '<input type="hidden" name="idp" form="pform" value="' .  htmlspecialchars($id) .'"  />'.
                 '<button type="submit" form="pform" class="btn btn-primary">add</button>'.
               '</div>
               </div>

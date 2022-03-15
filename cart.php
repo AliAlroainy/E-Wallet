@@ -15,9 +15,9 @@ include('database.php');
 
     <?php
 
-    if(isset($_POST['id'])){
+    if(!empty($_POST["idp"])){
 
-    $idd = $_POST['id'];
+    $idd = $_POST['idp'];
 
     $sql = "SELECT * FROM prodcut WHERE id=`$idd`  ";
 
@@ -35,9 +35,19 @@ include('database.php');
             </div>';
             }}}}
             else
-            echo "not found";
+            echo "no prudacts add";
 
 ?>
+
+<br/>
+<div class="card mt-5 p-3 ">
+
+totall :
+ <?php  ?>
+
+    <input type="submit"  class="btn btn-primary" value="buy">
+
+</div>
 
 
 

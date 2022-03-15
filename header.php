@@ -32,12 +32,10 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="home.php">account</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <a class="nav-link" href="#">recive</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">send</a>
-        </li>
+ 
         <li class="nav-item">
           <a class="nav-link " href="shop.php">shop</a>
         </li>
