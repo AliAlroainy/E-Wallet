@@ -97,12 +97,33 @@ if(isset($_SESSION["cart_item"])){
 
 <tr>
 <td colspan="2" align="right">Total:</td>
-<td align="right"><?php echo $total_quantity; ?></td>
-<td align="right" colspan="2"><strong><?php echo "$ ".number_format($total_price, 2); ?></strong></td>
-<td></td>
+<td align="right"><?php echo $total_quantity; ?> </td>
+
+
+
+
+<td align="right" colspan="2"><strong><?php echo "$ ".number_format($total_price, 2);  ?> </strong></td>
+<td align="right">
+  <?php 
+  $tot =$total_price; 
+
+  $sql3 = "UPDATE tot SET total='$tot' ";
+     mysqli_query($con, $sql3);
+
+  ?>
+
+
+
+  <form method="post" action="buy.php" > 
+   
+<button class="btn btn-primary" >buy</button>
+</form>
+</td>
+
 </tr>
 </tbody>
-</table>		
+</table>	
+
   <?php
 } else {
 ?>
